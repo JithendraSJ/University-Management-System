@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/auDucsKqkDRBYpRs3mBC8epJ8rKeN86OAS9gS7vpcfk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vMy8zYS9M/b3ZlbHlfUHJvZmVz/c2lvbmFsX1VuaXZl/cnNpdHlfbG9nby5w/bmc">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0px;
+        }
+    
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 200px;
+        }
+    
+        th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+    
+        th {
+          background-color: #afa54c;
+          color: white;
+        }
+      </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://imgs.search.brave.com/auDucsKqkDRBYpRs3mBC8epJ8rKeN86OAS9gS7vpcfk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vMy8zYS9M/b3ZlbHlfUHJvZmVz/c2lvbmFsX1VuaXZl/cnNpdHlfbG9nby5w/bmc" alt="">
+            <h2>U<span class="danger">M</span>S</h2>
+        </div>
+        <div class="navbar">
+            <a href="index1.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable1.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam1.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="index.html">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+    </header>
+    <h2>Weekly Timetable</h2>
+
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>11:00 AM</td>
+      <td>CSE111</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>CSE36</td>
+    </tr>
+    <tr>
+      <td>12:00 PM</td>
+      <td>-</td>
+      <td>ECE279</td>
+      <td>PES318</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1:00 PM</td>
+      <td>CHE110</td>
+      <td>ECE279</td>
+      <td>PES318</td>
+      <td>CSE111</td>
+      <td>MTH174</td>
+    </tr>
+    <tr>
+      <td>2:00 PM</td>
+      <td>MTH174</td>
+      <td>-</td>
+      <td>-</td>
+      <td>MTH174</td>
+      <td>MTH174</td>
+    </tr>
+    <tr>
+        <td>3:00PM</td>
+        <td>MTH174</td>
+        <td>ECE249</td>
+        <td>MTH174</td>
+        <td>CHE110</td>
+        <td>ECE249</td>
+    </tr>
+    <tr>
+        <td>4:00PM</td>
+        <td>MTH174</td>
+        <td>MTH174</td>
+        <td>CSE326</td>
+        <td>ECE249</td>
+        <td>PES318</td>
+    </tr>
+    <tr>
+        <td>5:00PM</td>
+        <td>-</td>
+        <td>MTH174</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+  </table>
+</html>
